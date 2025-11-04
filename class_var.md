@@ -1,4 +1,4 @@
-This comprehensive text on Class Variables is excellent. I have synthesized it into a sharp, interview-focused set of notes, emphasizing the crucial distinction between modifying a class variable via the Class Name versus the Object Instance.
+
 
 -----
 
@@ -67,6 +67,4 @@ print(Student.school_name) # ABC School (Class var is unchanged)
 
 -----
 
-We have now covered all the foundational Python OOP concepts you provided: Classes, Objects, Variables, Methods, Constructors, Destructors, and Inheritance (Types, Overriding, MRO).
 
-Would you like me to compile all of these notes into **one final, organized document** for your ultimate revision?
