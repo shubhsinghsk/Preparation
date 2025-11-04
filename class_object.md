@@ -165,10 +165,3 @@ dog1 = Dog("Buddy", 3) # __init__ is called here
 -----
 
 
-
-pass Statement:
-
-A null statement (No Operation/NOP).
-
-Used as a placeholder for an empty block (class, function, loop) where code will be added later, since an empty block is not allowed by the Python interpreter.
------
