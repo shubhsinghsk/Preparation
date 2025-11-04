@@ -79,5 +79,46 @@ issubclass(Employee, Company)     # True, if Employee inherits Company
 issubclass(Employee, (list, Company)) # True, if Employee inherits list OR Company
 ```
 
+This information on Method Overriding and MRO is vital for any OOP interview. Here are your final, concise notes on these topics.
+
 -----
+
+## 🔄 Advanced Inheritance Concepts
+
+### 1\. **Method Overriding**
+
+  * **Concept:** A child class redefines a method that is already available in its parent class.
+  * **Condition:** The method in the child class must have the **same name, same parameters, and (implicitly) the same return type** as the parent method.
+  * **Purpose:** To provide a **specific implementation** of a method in the child class, overriding the general implementation inherited from the parent.
+  * **Effect:** When the method is called using the **child class object**, the child's version executes.
+
+| Parent Class (Vehicle) | Child Class (Car) | Result (Calling `car.max_speed()`) |
+| :--- | :--- | :--- |
+| `max_speed(): 100 Km/Hour` | `max_speed(): 200 Km/Hour` (**Overridden**) | `max speed is 200 Km/Hour` |
+
+-----
+
+### 2\. **Method Resolution Order (MRO)**
+
+  * **Concept:** The **order** in which Python searches for a method or attribute across a class hierarchy.
+  * **Importance:** **Crucial in Multiple Inheritance** when a method exists in more than one parent class.
+  * **MRO Rule:** Python follows a set of rules (Linearization of a class) based on the order specified during inheritance. The search is generally:
+    1.  Start in the **current class**.
+    2.  Then search in the parent classes, generally **left-to-right** as defined in the class declaration (e.g., in `class C(B, A)`, Python searches `C` $\rightarrow$ `B` $\rightarrow$ `A`).
+  * **Checking MRO:** You can view the MRO using two methods:
+      * **Attribute:** `ClassName.__mro__`
+      * **Method:** `ClassName.mro()`
+
+#### **Example MRO Output**
+
+```python
+class C(B, A):
+    pass
+
+# Output of C.mro() shows the search path:
+# [<class '__main__.C'>, <class '__main__.B'>, <class '__main__.A'>, <class 'object'>]
+```
+
+-----
+
 
