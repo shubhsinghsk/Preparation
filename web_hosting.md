@@ -1,6 +1,3 @@
-Perfect ✅ Below are your **complete, ready-to-copy Markdown notes (`.md` file)** on how hosting works — including Render, Hostinger, DNS, SSL, redirects, and the full request flow.
-
-You can copy and save this content as `web_hosting_notes.md`.
 
 ---
 
@@ -236,4 +233,4 @@ Together — your website becomes **secure, fast, and accessible to anyone** in 
 
 ---
 
-Would you like me to include a **visual diagram** (browser → DNS → Render → Flask → response) at the end of this `.md` file as an image link or ASCII flowchart?
+
